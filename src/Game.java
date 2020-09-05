@@ -81,11 +81,11 @@ public class Game extends Canvas implements Runnable, KeyListener
 		{
 			frame.requestFocus();
 		}
-		for(int i = 0; i < cum.size(); i++) 
-        {
-            Cum cumGo = cum.get(i);
-            cumGo.tick();
-        }
+//		for(int i = 0; i < cum.size(); i++) 
+//        {
+//            Cum cumGo = cum.get(i);
+//            cumGo.tick();
+//        }
 		frames++;
 		if(frames>maxFrames)
 		{
@@ -155,14 +155,14 @@ public class Game extends Canvas implements Runnable, KeyListener
 	@Override
 	public void keyPressed(KeyEvent e) 
 	{
-		if(e.getKeyCode() == KeyEvent.VK_D) 
-        {
-            player.right = true;
-        }
-        if(e.getKeyCode()  == KeyEvent.VK_A) 
-        {
-            player.left = true;
-        }
+//		if(e.getKeyCode() == KeyEvent.VK_D) 
+//        {
+//            player.right = true;
+//        }
+//        if(e.getKeyCode()  == KeyEvent.VK_A) 
+//        {
+//            player.left = true;
+//        }
         if(e.getKeyCode()  == KeyEvent.VK_SPACE && player.delay == false) 
         {
             player.shoot = true;
@@ -174,14 +174,14 @@ public class Game extends Canvas implements Runnable, KeyListener
 	@Override
 	public void keyReleased(KeyEvent e) 
 	{
-		if(e.getKeyCode() == KeyEvent.VK_D) 
-        {
-            player.right = false;
-        }
-        if(e.getKeyCode()  == KeyEvent.VK_A) 
-        {
-            player.left = false;
-        }
+//		if(e.getKeyCode() == KeyEvent.VK_D) 
+//        {
+//            player.right = false;
+//        }
+//        if(e.getKeyCode()  == KeyEvent.VK_A) 
+//        {
+//            player.left = false;
+//        }
         if(e.getKeyCode()  == KeyEvent.VK_SPACE) 
         {
             player.shoot = false;
